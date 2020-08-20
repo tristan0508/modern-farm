@@ -6,6 +6,7 @@ import { createPotato } from './seeds/potato.js';
 import { createSoybean } from './seeds/soybean.js';
 import { createSunflower } from './seeds/sunflower.js';
 import { createWheat } from './seeds/wheat.js';
+import { addPlant, usePlants } from './field.js';
 
 
 
@@ -30,3 +31,12 @@ createSoybean();
 createSunflower();
 
 createWheat();
+const wheat = createWheat();
+console.log(wheat);
+
+addPlant();
+
+usePlants();
+
+
+
