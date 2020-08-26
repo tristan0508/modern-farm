@@ -1,20 +1,20 @@
 console.log("Welcome to the main module")
 import { createPlan } from './plan.js';
-import { addPlant, usePlants } from './field.js';
 import { plantSeeds } from './tractor.js';
-
+import { usePlants } from './field.js';
+import { catalog } from './catalog.js';
 
 
 
 createPlan();
-const yearPlantingPlan = createPlan();
-console.log("This is a string", yearPlantingPlan);
+const finalPlan = createPlan();
+
+plantSeeds(finalPlan);
+const plants = usePlants();
+
+console.log(catalog(plants));
 
 
-addPlant();
 
-usePlants();
-
-plantSeeds(yearPlantingPlan);
 
 
